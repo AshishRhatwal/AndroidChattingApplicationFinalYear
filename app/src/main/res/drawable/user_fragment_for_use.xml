@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:angle="0"
+        android:startColor="@color/gradstop"
+        android:endColor="@color/gradstart"
+        android:centerColor="@color/teal"
+        android:centerX="@android:integer/status_bar_notification_info_maxnum"
+        android:centerY="@android:integer/config_mediumAnimTime"
+        android:type="linear"/>
+</shape>

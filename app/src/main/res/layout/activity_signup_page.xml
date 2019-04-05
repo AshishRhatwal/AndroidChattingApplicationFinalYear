@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mra.com.androidchattingapplicationfinalyear.Signup_page">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Layout_OTP1"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/send_otp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Continue"
+                android:textStyle="bold"
+                android:background="@color/darkoranger"
+                />
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/pbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                style="@style/SpinKitView.Large.Wave"
+                app:SpinKit_Color="@color/white"
+                android:background="@color/blue_500"
+                android:layout_alignParentBottom="true"
+
+                />
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/cbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/SpinKitView.Large.Wave"
+                android:visibility="gone"
+                app:SpinKit_Color="@color/white"
+                android:background="@color/blue_500"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:background="@color/blue_500"
+            />
+        <ImageView
+            android:id="@+id/src"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:src="@drawable/thumbnail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/src"
+            android:text="Join Us buddy!"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/j"
+            android:textColor="@color/white"
+            android:layout_marginTop="-9dp"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="With Simple Registration"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/view"
+            android:id="@+id/linearLayout">
+            <TextView
+                android:id="@+id/txtmob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textAllCaps="true"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/gray"
+                android:textSize="15dp"/>
+
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/phoneNumber"
+                android:inputType="number"
+                app:met_mask="+91##########"
+                android:padding="10dp"
+                android:background="@drawable/et_bg"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/ic_action_phonenumber"
+                android:drawableLeft="@drawable/ic_action_phonenumber"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+
+
+            <EditText
+                android:id="@+id/Rec_otp"
+                android:inputType="number"
+                android:visibility="gone"
+                android:hint="Verification Code"
+                android:textColorHint="@color/gray"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_bg"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/lightgray"
+                android:text="number will automatic receive otp!"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Layout_Form1"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Register"
+            android:textStyle="bold"
+            android:background="@color/darkoranger"
+            />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progressreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SpinKitView.Large.Wave"
+            android:visibility="gone"
+            app:SpinKit_Color="@color/white"
+            android:background="@color/blue_500"
+            android:layout_alignParentBottom="true"/>
+
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:background="@color/blue_500"
+            />
+        <ImageView
+            android:id="@+id/src1"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:src="@drawable/thumbnail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/j1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/src1"
+            android:text="Join Us buddy!"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/j1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="perosonal Info for final registration"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/view1"
+            android:id="@+id/linearLayout1">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/RegUname"
+                android:inputType="textCapWords"
+                android:hint="eg:-ashish.31.12"
+                app:met_iconLeft="@drawable/ic_action_addperson"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                android:pointerIcon="crosshair"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Username"
+                app:met_iconPadding="2dp"
+                app:met_clearButton="true"
+                />
+
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/lname"
+                android:inputType="text"
+                android:hint="eg:-Ashish Rhatwal"
+                android:padding="10dp"
+                app:met_iconLeft="@drawable/ic_action_addperson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                android:pointerIcon="crosshair"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Full Name"
+                app:met_iconPadding="2dp"
+                app:met_clearButton="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Regemail"
+                android:inputType="textEmailAddress"
+                android:hint="eg:name@gmail.com"
+                app:met_iconLeft="@drawable/ic_action_name"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                android:pointerIcon="crosshair"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Email-Id"
+                app:met_iconPadding="2dp"
+                app:met_clearButton="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Regpassword"
+                android:password="true"
+                android:hint="0123456789"
+                android:inputType="numberPassword"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                app:met_iconLeft="@drawable/ic_action_lock"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                android:pointerIcon="crosshair"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/pass"
+                app:met_iconPadding="2dp"
+                app:met_clearButton="true"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="above infomation will register as new user!"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

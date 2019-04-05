@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name" translatable="true">heyBuddy!</string>
+    <string name="email">EMAIL-ID</string>
+    <string name="pass">PASSWORD</string>
+    <string name="mob">FULL NAME</string>
+    <string name="name">USERNAME</string>
+    <string name="user">USERNAME:-</string>
+    <string name="registeration">Registration</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Update Coming Soon...</string>
+    <string name="setting">Setting</string>
+    <string name="Logout">logout</string>
+    <string name="useradd">Update Coming Soon...</string>
+    <string name="feebback">FEED BACK FORM</string>
+    <string name="feedback">feed back</string>
+    <string name="signup">new user</string>
+    <string name="newuserreg">New User Register Below</string>
+    <string name="feedsendbtn">SEND</string>
+    <string name="developer">Developed By Ashish Rhatwal!</string>
+    <string name="Profie_image">Profile_Name</string>
+    <string name="ar">Ashish Rhatwal</string>
+    <string name="mobn">Mobile number</string>
+
+
+    <!--button string-->
+    <string name="follow">follow</string>
+    <string name="req">requested</string>
+    <string name="following">following</string>
+    <string name="loginbutn">LOGIN</string>
+    <string name="registerbtn">register</string>
+    <string name="otp">send_otp</string>
+    <string name="verifytop"></string>
+</resources>

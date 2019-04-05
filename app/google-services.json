@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "104298614743",
+    "firebase_url": "https://finalyearproject-16a39.firebaseio.com",
+    "project_id": "finalyearproject-16a39",
+    "storage_bucket": "finalyearproject-16a39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104298614743:android:cfaea62bdd311d6f",
+        "android_client_info": {
+          "package_name": "mra.com.androidchattingapplicationfinalyear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104298614743-4vqocvjla3arv2ipt304itltcas4rbet.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mra.com.androidchattingapplicationfinalyear",
+            "certificate_hash": "93cfe083c6a4d104b925baad23b356baac779af2"
+          }
+        },
+        {
+          "client_id": "104298614743-t6sceedfrppve9l8nuv8vpb26r4odsp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFB_cm0zKeV5AXDxX6wyOgw6rZvhPcGwQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104298614743-t6sceedfrppve9l8nuv8vpb26r4odsp1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

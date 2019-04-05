@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="mra.com.androidchattingapplicationfinalyear.LoginPage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Layout_OTP1"
+        >
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="195dp"
+            android:background="@color/blue_500"
+            />
+        <ImageView
+            android:id="@+id/src"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:src="@drawable/thumbnail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"/>
+
+        <TextView
+            android:id="@+id/j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/src"
+            android:text="Welcome buddy!"
+            android:fontFamily="casual"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/j"
+            android:layout_marginTop="-9dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:fontFamily="casual"
+            android:text="Let's goto your account! "
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/view"
+            android:id="@+id/linearLayout">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:met_iconPadding="2dp"
+                app:met_iconLeft="@drawable/ic_action_name"
+                android:pointerIcon="crosshair"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Email-Id"
+                android:padding="10dp"
+                app:met_errorColor="@color/red"
+                android:hint="Enter Registered Email"
+                android:textColorHint="@color/lightgray"
+                android:inputType="textEmailAddress"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                app:met_clearButton="true"
+                />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                android:password="true"
+                android:hint="Enter Registered Password"
+                android:textColorHint="@color/lightgray"
+                android:inputType="numberPassword"
+                android:layout_width="match_parent"
+                app:met_iconLeft="@drawable/ic_action_lock"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Password"
+                app:met_errorColor="@color/red"
+                app:met_iconPadding="2dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/et_bg"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                app:met_clearButton="true"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/LoginUser"
+            android:layout_below="@id/linearLayout"
+            android:layout_marginTop="35dp"
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:text="Log in"
+            android:textStyle="bold"
+            android:background="@color/darkoranger"
+            />
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/Spinkit"
+            style="@style/SpinKitView.Large.Wave"
+            android:background="@color/blue_500"
+            android:layout_marginTop="35dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:layout_below="@+id/LoginUser"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_below="@id/Spinkit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User Register Below!"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_action_addperson"
+            android:padding="2dp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_up"
+            android:text="@string/signup"
+            android:textColor="@color/gray"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:drawableStart="@drawable/ic_action_feedback"
+            android:padding="2dp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgot"
+            android:text="@string/feedback"
+            android:textColor="@color/gray"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

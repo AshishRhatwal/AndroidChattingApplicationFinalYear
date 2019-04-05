@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context="mra.com.androidchattingapplicationfinalyear.FeedBack_Loop">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Layout_OTP1"
+        >
+
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:background="@drawable/grad_bg"
+            />
+        <ImageView
+            android:id="@+id/src"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:src="@drawable/thumbnail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"/>
+
+        <TextView
+            android:id="@+id/j"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/src"
+            android:text="Feed Back!"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/j"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Please Share your Experience! "
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/view"
+            android:id="@+id/linearLayout">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/FeedName"
+                android:layout_below="@+id/view"
+                android:layout_width="280dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/lightgray"
+                android:hint="Name"
+                app:met_iconLeft="@drawable/ic_action_name"
+                app:met_iconPadding="2dp"
+                android:padding="10dp"
+                android:inputType="text"
+                android:pointerIcon="crosshair"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Name"
+                app:met_clearButton="true"
+                />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/FeedContact"
+                android:layout_below="@id/FeedName"
+                android:layout_width="280dp"
+                android:textColor="@color/gray"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/lightgray"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                app:met_iconLeft="@drawable/ic_action_phonenumber"
+                app:met_iconPadding="2dp"
+                android:padding="10dp"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/common_open_on_phone"
+                app:met_clearButton="true"
+                android:inputType="number"
+                />
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/Feed"
+                android:inputType="textMultiLine"
+                android:layout_below="@id/FeedContact"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/lightgray"
+                android:textColor="@color/gray"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:hint="Comments"
+                app:met_maxCharacters="50"
+                app:met_checkCharactersCountAtBeginning="true"
+                android:imeActionLabel="@string/name"
+                android:imeOptions="actionNext"
+                app:met_iconLeft="@drawable/ic_action_commet"
+                app:met_iconPadding="2dp"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="Comment"
+                app:met_clearButton="true"
+                />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/FeedSend"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:text="Send "
+            android:textStyle="bold"
+            android:background="@color/blue_500"
+            />
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/SpinKitView.Large.Wave"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
